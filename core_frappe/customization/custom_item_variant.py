@@ -69,6 +69,7 @@ def copy_attributes_to_variant(item, variant):
 		"valuation_rate",
 		"has_variants",
 		"attributes",
+		"uoms"
 	]
 
 	if item.variant_based_on == "Manufacturer":
