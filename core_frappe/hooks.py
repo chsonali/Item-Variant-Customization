@@ -126,9 +126,9 @@ app_license = "MIT"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "core_frappe.event.get_events"
-# }
+override_whitelisted_methods = {
+	"erpnext.controllers.item_variant.create_variant": "core_frappe.customization.custom_item_variant.custom_create_variant"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
