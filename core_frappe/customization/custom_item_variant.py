@@ -7,7 +7,6 @@ from six import string_types
 
 @frappe.whitelist()
 def custom_create_variant(item, args):
-        frappe.msgprint("trrwg")
         if isinstance(args, string_types):
                 args = json.loads(args)
 
@@ -36,7 +35,6 @@ def custom_create_variant(item, args):
         variant.set("attributes", variant_attributes)
         for row in template.uoms:
                 if row.uom == "Kg":
-                        frappe.log_error(width,"width")
                         variant_uoms.append({
                                 "uom":row.uom,
                                 "formula":template.length*flt(width)*1.441
